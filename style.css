@@ -1,0 +1,163 @@
+/*Esto es un comentario, y esta es la manera para realizar comentarios en CSS*/
+:root{
+    --primary-color-grey: #6E7886;
+    --primary-color-grey-50: rgba(110, 120, 124, 0.1);
+    --color-icon-comentario: rgb(29,161,242);
+    --color-icon-comentario-50: rgba(29, 161, 242, 0.4);
+    --color-icon-retwit: rgb(24,176,95);
+    --color-icon-retwit-50: rgba(24, 176, 95, 0.4);
+    --color-icon-like: rgb(224, 36,94);
+    --color-icon-like-50: rgba(224, 36, 94, 0.4);
+    --color-icon-share: rgb(30, 148, 221);
+    --color-icon-share-50: rgb(30, 148, 221, 0.4);
+}
+
+*{
+    background-color: #15202b;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    box-sizing: border-box;
+}
+
+img, svg{
+    width: 75%;
+    max-width: 100%;
+    max-height: auto;
+}
+
+a {
+    color: rgb(29,161,242);
+    text-decoration: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+.textGrey{
+    color: #6E7886;
+}
+
+.container-twitt{
+    border-bottom: solid 1px var(--primary-color-grey);
+    width: 650px;
+    height: 400px;
+    display: grid;
+
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+.container-twitt *{
+    background-color: transparent;
+}
+
+.container-twitt:hover{
+    cursor: pointer;
+    transition: 0.6s;
+    background-color: var(--primary-color-grey-50);
+    border-radius: 10px;
+}
+
+.twitt-body{
+    grid-column: 1/13;
+    grid-row: 1/11;
+
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    grid-template-rows: 1fr;
+}
+
+.twitt-body p{
+    padding: 10px 0px;
+}
+
+.twitt-content img{
+    border-radius: 30px;
+    border-style:solid;
+    border-width: 1px;
+    border-color: var(--primary-color-grey);
+    width: 95%;
+}
+
+.twitt-icons{
+    grid-column: 1/13;
+    grid-row: 12/13;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.twitt-icons .icon:nth-child(1):hover svg, 
+.twitt-icons .icon:nth-child(1):hover span {
+    border-radius: 50%;
+    background-color: var(--color-icon-comentario-50);
+    fill: var(--color-icon-comentario);
+    color: var(--color-icon-comentario);
+}
+
+.twitt-icons .icon:nth-child(2):hover svg, 
+.twitt-icons .icon:nth-child(2):hover span {
+    border-radius: 50%;
+    background-color: var(--color-icon-retwit-50);
+    fill: var(--color-icon-retwit);
+    color: var(--color-icon-retwit);
+}
+
+.twitt-icons .icon:nth-child(3):hover svg, 
+.twitt-icons .icon:nth-child(3):hover span {
+    border-radius: 50%;
+    background-color: var(--color-icon-like-50);
+    fill: var(--color-icon-like);
+    color: var(--color-icon-like);
+}
+
+.twitt-icons .icon:nth-child(4):hover svg, 
+.twitt-icons .icon:nth-child(4):hover span {
+    border-radius: 50%;
+    background-color: var(--color-icon-share-50);
+    fill: var(--color-icon-share);
+    color: var(--color-icon-share);
+}
+
+
+
+.twitt-avatar > img{
+    border-radius: 50%;
+    margin: 10px;
+}
+
+
+.icon{
+    width:60px;
+    display:flex;
+    justify-content:center ;
+    align-items: center;
+   
+}
+
+.icon svg{
+    width: 50%;
+    margin: auto 5px auto auto;
+    fill: var(--primary-color-grey);
+    padding: 5px;
+}
+
+.icon span{
+    font-size: small;
+    color: var(--primary-color-grey);
+}
+
+
+
+
+
+
