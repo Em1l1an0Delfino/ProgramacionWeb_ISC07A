@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+</head>
+<body>
+<main class="container">
+  <section class="userselects">
+    <select id="select-users">
+      <!-- Las opciones se cargarán dinámicamente desde JavaScript -->
+    </select>
+    <button id="show-tasks-button">Mostrar Tareas</button>
+  </section>
+  <section class="user-container" id="user-container">
+    <h3>Informacion del usuario seleccionado</h3>
+    <ul>
+      <li id="user-info"></li>
+    </ul>
+  </section>
+  <section class="task-container" id="task-container">
+    <!-- Las tareas se mostrarán después de presionar el botón -->
+    <h3>Lista de tareas del usuario</h3>
+    <ul id="task-list"></ul>
+  </section>
+</main>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
